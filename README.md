@@ -13,7 +13,7 @@ The file is used in Initialize (VEPowertrainsAndFuels) and CalculateCarbonIntens
 #azone_fuel_power_cost.csv 
 
 This file supplies data for retail cost of fuel and electricity and is used in the CalculateVehicleOperatingCost module.
-- locate fuel retail costs for Azone using PUMA
+- locate fuel retail costs
 
 #azone_gq_pop_by_age.csv
 
@@ -44,6 +44,8 @@ This file specifies the light truck proportion of the vehicle fleet and is used 
 
 This file provides inputs on the proportion of households having PAYD (pay-as-you-drive) insurance and is used in the CalculateVehicleOwnCost module.
 
+* Not sure where to locate 
+
 #azone_per_cap_inc.csv
 
 This file contains information on regional average per capita household and group quarters income in year 2010 dollars and is used in the PredictIncome module.
@@ -60,9 +62,14 @@ This file contains ratio of workers to persons by age and is used in the Predict
 
 This file supplies data for vehicle related taxes and is used in the CalculateVehicleOperatingCost module.
 
+*Not sure where to locate
+
 #azone_vehicle_access_times.csv 
 
 This file supplies data for vehicle access and egress time and is used in the CalculateVehicleOperatingCost module.
+
+- Access refers to ?
+- Egress: time is takes to exit vehicle
 
 #bzone_transit_service.csv 
 
@@ -75,6 +82,7 @@ This file contains the information about level of car service availability and i
 #bzone_dwelling_units.csv
 
 This file contains the number single-family, multi-family and group-quarter dwelling units and is used in the PredictHousing module.
+- Can be found using Census Microdata
 
 #bzone_employment.csv 
 
@@ -113,6 +121,9 @@ This file contains the target proportion of households located in mixed-used nei
 This file contains proportion of Single-Family, Multi-Family and Group Quarter dwelling units within the urban portion of the zone and is used in the AssignLocTypes module.
 
 #marea_base_year_dvmt.csv 
+
+- Use Units in Structure table to identify dwelling type proportions for Philadelphia County, PA in ACS
+https://data.census.gov/cedsci/table?q=Philadelphia%20dwelling%20units&tid=ACSSE2019.K202504 
 
 This file is used to specify to adjust the dvmt growth factors and is optional (only needed if user wants to modify the values). The file is used in the Initialize (VETravelPerformance), CalculateBaseRoadDvmt and CalculateFutureRoadDvmt modules.
 
