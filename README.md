@@ -62,13 +62,29 @@ This file provides inputs for mean auto age and mean light truck age and is used
 
 This file provides inputs for flat fees/taxes (i.e. annual cost per vehicle) and ad valorem taxes (i.e. percentage of vehicle value paid in taxes). The file is used in CalculateVehicleOwnCost module.
 
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost
+
 # azone_hhsize_targets.csv 
 
 This file contains the household specific targets and is used in CreateHouseholds module.
 
+- Contact Person/Office who would have a good understadning of population forecasts by age group
+- Age-based population forecasts are also included in UrbanSim outputs
+
+![image](https://user-images.githubusercontent.com/85887330/122816533-de3de580-d2a4-11eb-89bf-79edc22f1776.png)
+
+
 # azone_lttrk_prop.csv 
 
 This file specifies the light truck proportion of the vehicle fleet and is used in AssignVehicleType module.
+
+- Contact Rob from Energy & CC
+- Contact DOT (see https://www.dmv.pa.gov/VEHICLE-SERVICES/Title-Registration/Pages/Fleet.aspx)
+
+![image](https://user-images.githubusercontent.com/85887330/122815694-ca45b400-d2a3-11eb-9260-5898b704e29c.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignvehicletype
 
 # azone_payd_insurance_prop.csv 
 
@@ -85,16 +101,25 @@ This file contains information on regional average per capita household and grou
 This file provides inputs for a goal for diverting a portion of SOV travel within a 20-mile tour distance and is used in the DivertSovTravel module.
 
 - Doesnt need to be changed ?
+- Contact whicever person/office would be able to provide a goal for SOV divertion
 
 # azone_relative_employment.csv 
 
 This file contains ratio of workers to persons by age and is used in the PredictWorkers module.
+- Use UrbanSum Output
+
+![image](https://user-images.githubusercontent.com/85887330/122814901-cf563380-d2a2-11eb-8c00-1a96b4991292.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#predictworkers
 
 # azone_veh_use_taxes.csv
 
 This file supplies data for vehicle related taxes and is used in the CalculateVehicleOperatingCost module.
+- Locate info in VRTs for A-zone using data from DOT 
 
-*Not sure where to locate
+![image](https://user-images.githubusercontent.com/85887330/122821773-40014e00-d2ab-11eb-9b30-e5369a5c5ae0.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost
 
 # azone_vehicle_access_times.csv 
 
@@ -153,9 +178,15 @@ This file contains the information about workers and households participating in
 
 This file contains the information about unprotected (i.e., developable) area within the zone and is used in the Calculate4DMeasures module.
 
+![image](https://user-images.githubusercontent.com/85887330/122823760-c028b300-d2ad-11eb-930a-5aebe317c93b.png)
+
+
 # bzone_urban-mixed-use_prop.csv
 
 This file contains the target proportion of households located in mixed-used neighborhoods in zone and is used in the CalculateUrbanMixMeasure module.
+
+![image](https://user-images.githubusercontent.com/85887330/122823654-a1c2b780-d2ad-11eb-9e68-db7a49fa9777.png)
+
 
 # bzone_urban-town_du_proportions.csv 
 
