@@ -19,6 +19,10 @@ This file is used to specify the carbon intensity of electricity and is optional
 
 The file is used in Initialize (VEPowertrainsAndFuels) and CalculateCarbonIntensity modules.
 
+![image](https://user-images.githubusercontent.com/85887330/122805356-00c90200-d297-11eb-8e08-0f05a790ed3b.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignhhvehiclepowertrain
+
 # azone_fuel_power_cost.csv 
 
 This file supplies data for retail cost of fuel and electricity and is used in the CalculateVehicleOperatingCost module.
@@ -44,9 +48,15 @@ This file contains population estimates/forecasts by age and is used in the Crea
 - Census PUMS
 - From UrbanSim Output
 
+![image](https://user-images.githubusercontent.com/85887330/122803363-8303f700-d294-11eb-9262-049f60ae17ea.png)
+
+
 # azone_hh_veh_mean_age.csv 
 
 This file provides inputs for mean auto age and mean light truck age and is used in the AssignVehicleAge module.
+
+![image](https://user-images.githubusercontent.com/85887330/122809238-d594e180-d29b-11eb-8e26-5cb0d587dce0.png)
+
 
 # azone_hh_veh_own_taxes.csv 
 
