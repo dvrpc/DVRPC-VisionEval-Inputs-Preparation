@@ -3,10 +3,15 @@ azone_carsvc_characteristics.csv
 
 This file specifies the different characteristics for high and low car service level and is used in the CreateVehicleTable and AssignVehicleAge modules.
 
+- Service level ?
+
 #azone_charging_availability.csv
 
 This file has data on proportion of different household types who has EV charging available and is used in the AssignHHVehiclePowertrain module.
-azone_electricity_carbon_intensity.csv This file is used to specify the carbon intensity of electricity and is optional (only needed if user wants to modify the values). 
+
+azone_electricity_carbon_intensity.csv 
+
+This file is used to specify the carbon intensity of electricity and is optional (only needed if user wants to modify the values). 
 The file is used in Initialize (VEPowertrainsAndFuels) and CalculateCarbonIntensity modules.
 
 #azone_fuel_power_cost.csv 
@@ -53,6 +58,8 @@ This file contains information on regional average per capita household and grou
 
 This file provides inputs for a goal for diverting a portion of SOV travel within a 20-mile tour distance and is used in the DivertSovTravel module.
 
+- Doesnt need to be changed ?
+
 #azone_relative_employment.csv 
 
 This file contains ratio of workers to persons by age and is used in the PredictWorkers module.
@@ -77,6 +84,8 @@ This file supplies the data on relative public transit accessibility and is used
 #bzone_carsvc_availability.csv 
 
 This file contains the information about level of car service availability and is used in the AssignCarSvcAvailability module.
+
+-Not sure where to find
 
 #bzone_dwelling_units.csv
 
