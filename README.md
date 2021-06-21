@@ -96,13 +96,18 @@ This file contains the number single-family, multi-family and group-quarter dwel
 
 This file contains the total, retail and service employment by zone and is used in the LocateEmployment module.
 
+https://data.census.gov/cedsci/table?q=employment%20philadelphia&tid=ACSDP1Y2019.DP03&hidePreview=true 
+
 #bzone_hh_inc_qrtl_prop.csv 
+
 
 This file contains the proportion of households in 1st, 2nd, 3rd, and 4th quartile of household income and is used in the PredictHousing module.
 
 #bzone_lat_lon.csv 
 
 This file contains the latitude and longitude of the centroid of the zone and is used in the LocateEmployment module.
+
+- Would we create this file manually?
 
 #bzone_network_design.csv 
 
@@ -211,3 +216,5 @@ This file is used to specify the powertrain proportion of heavy duty trucks and 
 #region_prop_externalities_paid.csv 
 
 This file supplies data for climate change and other social costs and is used in the CalculateVehicleOperatingCost module.
+
+- What measures do we use to define the social costs?
