@@ -103,6 +103,8 @@ https://data.census.gov/cedsci/table?q=employment%20philadelphia&tid=ACSDP1Y2019
 
 This file contains the proportion of households in 1st, 2nd, 3rd, and 4th quartile of household income and is used in the PredictHousing module.
 
+- Average Incomes Table: https://data.census.gov/mdat/#/search?ds=ACSPUMS5Y2019&vv=*FINCP&wt=WGTP 
+
 #bzone_lat_lon.csv 
 
 This file contains the latitude and longitude of the centroid of the zone and is used in the LocateEmployment module.
