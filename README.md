@@ -1,83 +1,99 @@
 # Vision-Eval-Input Files
 azone_carsvc_characteristics.csv 
 
+Link:https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#createvehicletable
+
 This file specifies the different characteristics for high and low car service level and is used in the CreateVehicleTable and AssignVehicleAge modules.
 
 - Service level ?
 
-#azone_charging_availability.csv
+# azone_charging_availability.csv
 
 This file has data on proportion of different household types who has EV charging available and is used in the AssignHHVehiclePowertrain module.
 
 azone_electricity_carbon_intensity.csv 
 
+- ask Rob from Energy and CC 
+
 This file is used to specify the carbon intensity of electricity and is optional (only needed if user wants to modify the values). 
+
 The file is used in Initialize (VEPowertrainsAndFuels) and CalculateCarbonIntensity modules.
 
-#azone_fuel_power_cost.csv 
+# azone_fuel_power_cost.csv 
 
 This file supplies data for retail cost of fuel and electricity and is used in the CalculateVehicleOperatingCost module.
 - locate fuel retail costs
+- ask Rob from Energy and CC 
 
-#azone_gq_pop_by_age.csv
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost
+
+
+# azone_gq_pop_by_age.csv
 
 This file contains group quarters population estimates/forecasts by age and is used in the CreateHouseholds module.
 
-#azone_hh_pop_by_age.csv 
+- Refers to insitutional and non-institutions living quarters (dorms, nursing homes, correctional facilities,etc.)
+
+- design a script that takes UrbanSim Output, aggregates geogrpahy to PUMA and has all the age ranges
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#createhouseholds
+
+# azone_hh_pop_by_age.csv 
 
 This file contains population estimates/forecasts by age and is used in the CreateHouseholds module.
 - Census PUMS
+- From UrbanSim Output
 
-#azone_hh_veh_mean_age.csv 
+# azone_hh_veh_mean_age.csv 
 
 This file provides inputs for mean auto age and mean light truck age and is used in the AssignVehicleAge module.
 
-#azone_hh_veh_own_taxes.csv 
+# azone_hh_veh_own_taxes.csv 
 
 This file provides inputs for flat fees/taxes (i.e. annual cost per vehicle) and ad valorem taxes (i.e. percentage of vehicle value paid in taxes). The file is used in CalculateVehicleOwnCost module.
 
-#azone_hhsize_targets.csv 
+# azone_hhsize_targets.csv 
 
 This file contains the household specific targets and is used in CreateHouseholds module.
 
-#azone_lttrk_prop.csv 
+# azone_lttrk_prop.csv 
 
 This file specifies the light truck proportion of the vehicle fleet and is used in AssignVehicleType module.
 
-#azone_payd_insurance_prop.csv 
+# azone_payd_insurance_prop.csv 
 
 This file provides inputs on the proportion of households having PAYD (pay-as-you-drive) insurance and is used in the CalculateVehicleOwnCost module.
 
 * Not sure where to locate 
 
-#azone_per_cap_inc.csv
+# azone_per_cap_inc.csv
 
 This file contains information on regional average per capita household and group quarters income in year 2010 dollars and is used in the PredictIncome module.
 
-#azone_prop_sov_dvmt_diverted.csv 
+# azone_prop_sov_dvmt_diverted.csv 
 
 This file provides inputs for a goal for diverting a portion of SOV travel within a 20-mile tour distance and is used in the DivertSovTravel module.
 
 - Doesnt need to be changed ?
 
-#azone_relative_employment.csv 
+# azone_relative_employment.csv 
 
 This file contains ratio of workers to persons by age and is used in the PredictWorkers module.
 
-#azone_veh_use_taxes.csv
+# azone_veh_use_taxes.csv
 
 This file supplies data for vehicle related taxes and is used in the CalculateVehicleOperatingCost module.
 
 *Not sure where to locate
 
-#azone_vehicle_access_times.csv 
+# azone_vehicle_access_times.csv 
 
 This file supplies data for vehicle access and egress time and is used in the CalculateVehicleOperatingCost module.
 
 - Access refers to ?
 - Egress: time is takes to exit vehicle
 
-#bzone_transit_service.csv 
+# bzone_transit_service.csv 
 
 This file supplies the data on relative public transit accessibility and is used in the AssignTransitService module.
 
