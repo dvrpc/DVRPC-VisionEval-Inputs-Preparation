@@ -140,7 +140,7 @@ This file supplies the data on relative public transit accessibility and is used
 
 This file contains the information about level of car service availability and is used in the AssignCarSvcAvailability module.
 
--Not sure where to find
+![image](https://user-images.githubusercontent.com/85887330/122960107-2fa3ae80-d351-11eb-9eb9-3e61b8a9e3d6.png)
 
 # bzone_dwelling_units.csv
 
@@ -176,8 +176,6 @@ https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modul
 
 This file contains the latitude and longitude of the centroid of the zone and is used in the LocateEmployment module.
 
-- Find Centroid of DVRPC area ( , )
-
 ![image](https://user-images.githubusercontent.com/85887330/122843893-78665380-d2ce-11eb-930f-5127e908f2e2.png)
 
 https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#locateemployment
@@ -190,9 +188,17 @@ This file contains the intersection density in terms of pedestrian-oriented inte
 
 This file contains the parking information and is used in the AssignParkingRestrictions module.
 
+![image](https://user-images.githubusercontent.com/85887330/122947225-ffa3dd80-d347-11eb-9002-1a28e923640e.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignparkingrestrictions
+
 # bzone_travel_demand_mgt.csv
 
 This file contains the information about workers and households participating in demand management programs and is used in the AssignDemandManagement module.
+
+![image](https://user-images.githubusercontent.com/85887330/122947359-15b19e00-d348-11eb-9c44-e38add779b63.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assigndemandmanagement
 
 # bzone_unprotected_area.csv
 
@@ -200,6 +206,7 @@ This file contains the information about unprotected (i.e., developable) area wi
 
 ![image](https://user-images.githubusercontent.com/85887330/122823760-c028b300-d2ad-11eb-930a-5aebe317c93b.png)
 
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculate4dmeasures
 
 # bzone_urban-mixed-use_prop.csv
 
@@ -207,10 +214,15 @@ This file contains the target proportion of households located in mixed-used nei
 
 ![image](https://user-images.githubusercontent.com/85887330/122823654-a1c2b780-d2ad-11eb-9e68-db7a49fa9777.png)
 
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#user-input-files-8
 
 # bzone_urban-town_du_proportions.csv 
 
 This file contains proportion of Single-Family, Multi-Family and Group Quarter dwelling units within the urban portion of the zone and is used in the AssignLocTypes module.
+
+![image](https://user-images.githubusercontent.com/85887330/122951213-1d267680-d34b-11eb-9297-a943b68c69e0.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignloctypes
 
 # marea_base_year_dvmt.csv 
 
@@ -223,9 +235,15 @@ This file is used to specify to adjust the dvmt growth factors and is optional (
 
 This file is used to specify the charges of vehicle travel for different congestion levels and is optional. The file is used in the Initialize (VETravelPerformance) and CalculateRoadPerformance modules.
 
+- Contact Energy & CC office
+
 # marea_dvmt_split_by_road_class.csv 
 
 This file is used to specify the dvmt split for different road classes and is optional. The file is used in the Initialize (VETravelPerformance) and CalculateBaseRoadDvmt modules.
+
+![image](https://user-images.githubusercontent.com/85887330/122953088-7216bc80-d34c-11eb-8ceb-58a7922021ef.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatebaseroaddvmt
 
 # marea_lane_miles.csv 
 
@@ -233,7 +251,9 @@ This file contains inputs on the numbers of freeway lane-miles and arterial lane
 
 # marea_operations_deployment.csv 
 
-This file is used to specify the proportion of dvmt affected by operations for different road classes and is optional. The file is used in the Initialize (VETravelPerformance) and CalculateRoadPerformance modules.
+This file is used to specify the proportion of dvmt affected by operations for different road classes and is optional. 
+
+The file is used in the Initialize (VETravelPerformance) and CalculateRoadPerformance modules.
 
 # marea_speed_smooth_ecodrive.csv 
 
@@ -259,6 +279,10 @@ This file is used to specify the mixes of transit vehicle powertrains and is opt
 
 This file contains annual revenue-miles for different transit modes for metropolitan area and is used in the AssignTransitService module.
 
+![image](https://user-images.githubusercontent.com/85887330/122954635-9b841800-d34d-11eb-8d9d-869745f1a8e6.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assigntransitservice
+
 # other_ops_effectiveness.csv
 
 This file is used to specify the delay effects of operations in different road classes and is optional (only needed if user wants to modify the values). The file is used in the Initialize (VETravelPerformance) and CalculateRoadPerformance modules.
@@ -279,21 +303,46 @@ This file is used to specify the powertrain proportion of car services and is op
 
 This file supplies data for the light truck proportion of commercial vehicles and is used in the CalculateComEnergyAndEmissions module.
 
+![image](https://user-images.githubusercontent.com/85887330/122955128-ed2ca280-d34d-11eb-8c59-d575217aff4f.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatecomenergyandemissions
+
 # region_comsvc_powertrain_prop.csv 
 
 This file is used to specify the powertrain proportion of commercial vehicles and is optional. The file is used in the Initialize (VEPowertrainsAndFuels) and CalculateComEnergyAndEmissions modules.
 
+![image](https://user-images.githubusercontent.com/85887330/122957061-9031ec00-d34f-11eb-9c26-33635645aa2d.png)
+
+
 # region_hh_driver_adjust_prop.csv 
 
 This file specifies the relative driver licensing rate relative to the model estimation data year and is used in the AssignDrivers module.
+
+- Contact DOT
+
+![image](https://user-images.githubusercontent.com/85887330/122956469-071ab500-d34f-11eb-9269-74ba9a33c4e4.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assigndrivers
 
 # region_hvytrk_powertrain_prop.csv
 
 This file is used to specify the powertrain proportion of heavy duty trucks and is optional. The file is used in the Initialize 
 (VEPowertrainsAndFuels) and CalculateComEnergyAndEmissions modules.
 
+![image](https://user-images.githubusercontent.com/85887330/122955418-19482380-d34e-11eb-9939-14003b3e8f15.png)
+
+- Contact DOT
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#user-input-files-36
+
 # region_prop_externalities_paid.csv 
 
 This file supplies data for climate change and other social costs and is used in the CalculateVehicleOperatingCost module.
 
-- What measures do we use to define the social costs?
+- Contact Energy & CC
+
+PropClimateCostPaid: Proportion of climate change costs paid by users (i.e. ratio of carbon taxes to climate change costs
+PropOtherExtCostPaid: Proportion of other social costs paid by users
+
+![image](https://user-images.githubusercontent.com/85887330/122958094-8c529980-d350-11eb-9dc9-77419a3ca3e2.png)
+
