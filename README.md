@@ -1,7 +1,7 @@
 # Vision-Eval-Input Files
 azone_carsvc_characteristics.csv 
 
-Link:https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#createvehicletable
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#createvehicletable)
 
 This file specifies the different characteristics for high and low car service level and is used in the CreateVehicleTable and AssignVehicleAge modules.
 
@@ -11,8 +11,6 @@ This file specifies the different characteristics for high and low car service l
 
 This file has data on proportion of different household types who has EV charging available and is used in the AssignHHVehiclePowertrain module.
 
-azone_electricity_carbon_intensity.csv 
-
 - ask Rob from Energy and CC 
 
 This file is used to specify the carbon intensity of electricity and is optional (only needed if user wants to modify the values). 
@@ -21,7 +19,7 @@ The file is used in Initialize (VEPowertrainsAndFuels) and CalculateCarbonIntens
 
 ![image](https://user-images.githubusercontent.com/85887330/122805356-00c90200-d297-11eb-8e08-0f05a790ed3b.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignhhvehiclepowertrain
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignhhvehiclepowertrain)
 
 # azone_fuel_power_cost.csv 
 
@@ -29,7 +27,7 @@ This file supplies data for retail cost of fuel and electricity and is used in t
 - locate fuel retail costs
 - ask Rob from Energy and CC 
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost)
 
 
 # azone_gq_pop_by_age.csv
@@ -40,7 +38,7 @@ This file contains group quarters population estimates/forecasts by age and is u
 
 - design a script that takes UrbanSim Output, aggregates geogrpahy to PUMA and has all the age ranges
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#createhouseholds
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#createhouseholds)
 
 # azone_hh_pop_by_age.csv 
 
@@ -66,7 +64,7 @@ This file provides inputs for flat fees/taxes (i.e. annual cost per vehicle) and
 
 ![image](https://user-images.githubusercontent.com/85887330/122964279-13097580-d355-11eb-9c5b-d20f94d2117c.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost)
 
 # azone_hhsize_targets.csv 
 
@@ -87,7 +85,7 @@ This file specifies the light truck proportion of the vehicle fleet and is used 
 
 ![image](https://user-images.githubusercontent.com/85887330/122815694-ca45b400-d2a3-11eb-9260-5898b704e29c.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignvehicletype
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignvehicletype)
 
 # azone_payd_insurance_prop.csv 
 
@@ -95,7 +93,7 @@ This file provides inputs on the proportion of households having PAYD (pay-as-yo
 
 ![image](https://user-images.githubusercontent.com/85887330/122964420-40562380-d355-11eb-99f1-3d4d42ab2462.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleowncost
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleowncost)
 
 * Not sure where to locate 
 
@@ -121,7 +119,7 @@ This file contains ratio of workers to persons by age and is used in the Predict
 
 ![image](https://user-images.githubusercontent.com/85887330/122814901-cf563380-d2a2-11eb-8c00-1a96b4991292.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#predictworkers
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#predictworkers)
 
 # azone_veh_use_taxes.csv
 
@@ -130,7 +128,7 @@ This file supplies data for vehicle related taxes and is used in the CalculateVe
 
 ![image](https://user-images.githubusercontent.com/85887330/122821773-40014e00-d2ab-11eb-9b30-e5369a5c5ae0.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost)
 
 # azone_vehicle_access_times.csv 
 
@@ -140,7 +138,7 @@ This file supplies data for vehicle access and egress time and is used in the Ca
 
 ![image](https://user-images.githubusercontent.com/85887330/122964808-a2168d80-d355-11eb-883a-b56012a04608.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost)
 
 # bzone_transit_service.csv 
 
@@ -164,7 +162,7 @@ This file contains the number single-family, multi-family and group-quarter dwel
 
 ![image](https://user-images.githubusercontent.com/85887330/122844004-b6637780-d2ce-11eb-91aa-9aa78a15695c.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#predicthousing
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#predicthousing)
 
 # bzone_employment.csv 
 
@@ -174,7 +172,7 @@ This file contains the total, retail and service employment by zone and is used 
 
 - https://data.census.gov/cedsci/table?q=employment%20philadelphia&tid=ACSDP1Y2019.DP03&hidePreview=true 
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#locateemployment
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#locateemployment)
 
 # bzone_hh_inc_qrtl_prop.csv 
 
@@ -182,7 +180,7 @@ This file contains the proportion of households in 1st, 2nd, 3rd, and 4th quarti
 
 ![image](https://user-images.githubusercontent.com/85887330/122843708-1d346100-d2ce-11eb-939b-051ba1a01c86.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#predicthousing 
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#predicthousing)
 
 - Average Incomes Table: https://data.census.gov/mdat/#/search?ds=ACSPUMS5Y2019&vv=*FINCP&wt=WGTP 
 
@@ -192,7 +190,7 @@ This file contains the latitude and longitude of the centroid of the zone and is
 
 ![image](https://user-images.githubusercontent.com/85887330/122843893-78665380-d2ce-11eb-930f-5127e908f2e2.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#locateemployment
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#locateemployment)
 
 # bzone_network_design.csv 
 
@@ -208,7 +206,7 @@ This file contains the parking information and is used in the AssignParkingRestr
 
 ![image](https://user-images.githubusercontent.com/85887330/122947225-ffa3dd80-d347-11eb-9002-1a28e923640e.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignparkingrestrictions
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignparkingrestrictions)
 
 # bzone_travel_demand_mgt.csv
 
@@ -216,7 +214,7 @@ This file contains the information about workers and households participating in
 
 ![image](https://user-images.githubusercontent.com/85887330/122947359-15b19e00-d348-11eb-9c44-e38add779b63.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assigndemandmanagement
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assigndemandmanagement)
 
 # bzone_unprotected_area.csv
 
@@ -224,7 +222,7 @@ This file contains the information about unprotected (i.e., developable) area wi
 
 ![image](https://user-images.githubusercontent.com/85887330/122823760-c028b300-d2ad-11eb-930a-5aebe317c93b.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculate4dmeasures
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculate4dmeasures)
 
 # bzone_urban-mixed-use_prop.csv
 
@@ -232,7 +230,7 @@ This file contains the target proportion of households located in mixed-used nei
 
 ![image](https://user-images.githubusercontent.com/85887330/122823654-a1c2b780-d2ad-11eb-9e68-db7a49fa9777.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#user-input-files-8
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#user-input-files-8)
 
 # bzone_urban-town_du_proportions.csv 
 
@@ -240,13 +238,13 @@ This file contains proportion of Single-Family, Multi-Family and Group Quarter d
 
 ![image](https://user-images.githubusercontent.com/85887330/122951213-1d267680-d34b-11eb-9297-a943b68c69e0.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignloctypes
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignloctypes)
 
 # marea_base_year_dvmt.csv 
 
 ![image](https://user-images.githubusercontent.com/85887330/122965840-a55e4900-d356-11eb-89b3-1208ce3828cd.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#initialize-vetravelperformance
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#initialize-vetravelperformance)
 
 - Use Units in Structure table to identify dwelling type proportions for Philadelphia County, PA in ACS
 https://data.census.gov/cedsci/table?q=Philadelphia%20dwelling%20units&tid=ACSSE2019.K202504 
@@ -261,7 +259,7 @@ This file is used to specify the charges of vehicle travel for different congest
 
 ![image](https://user-images.githubusercontent.com/85887330/122965957-c4f57180-d356-11eb-86b3-1f689532accb.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#initialize-vetravelperformance
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#initialize-vetravelperformance)
 
 # marea_dvmt_split_by_road_class.csv 
 
@@ -269,7 +267,7 @@ This file is used to specify the dvmt split for different road classes and is op
 
 ![image](https://user-images.githubusercontent.com/85887330/122953088-7216bc80-d34c-11eb-8ceb-58a7922021ef.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatebaseroaddvmt
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatebaseroaddvmt)
 
 # marea_lane_miles.csv 
 
@@ -279,7 +277,7 @@ This file contains inputs on the numbers of freeway lane-miles and arterial lane
 
 ![image](https://user-images.githubusercontent.com/85887330/122962453-6f6b9580-d353-11eb-881c-4b243d0f214f.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignroadmiles
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignroadmiles)
 
 # marea_operations_deployment.csv 
 
@@ -287,7 +285,7 @@ This file is used to specify the proportion of dvmt affected by operations for d
 
 The file is used in the Initialize (VETravelPerformance) and CalculateRoadPerformance modules.
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculateroadperformance
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculateroadperformance)
 
 # marea_speed_smooth_ecodrive.csv 
 
@@ -295,7 +293,7 @@ This input file supplies information of deployment of speed smoothing and ecodri
 
 ![image](https://user-images.githubusercontent.com/85887330/122966156-fbcb8780-d356-11eb-89f7-bbfda2c642b8.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatempgmpkwhadjustments
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatempgmpkwhadjustments)
 
 # marea_transit_ave_fuel_carbon_intensity.csv 
 
@@ -319,7 +317,7 @@ This file contains annual revenue-miles for different transit modes for metropol
 
 ![image](https://user-images.githubusercontent.com/85887330/122954635-9b841800-d34d-11eb-8d9d-869745f1a8e6.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assigntransitservice
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assigntransitservice)
 
 # other_ops_effectiveness.csv
 
@@ -343,7 +341,7 @@ This file supplies data for the light truck proportion of commercial vehicles an
 
 ![image](https://user-images.githubusercontent.com/85887330/122955128-ed2ca280-d34d-11eb-8c59-d575217aff4f.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatecomenergyandemissions
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatecomenergyandemissions)
 
 # region_comsvc_powertrain_prop.csv 
 
@@ -360,7 +358,7 @@ This file specifies the relative driver licensing rate relative to the model est
 
 ![image](https://user-images.githubusercontent.com/85887330/122956469-071ab500-d34f-11eb-9269-74ba9a33c4e4.png)
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assigndrivers
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assigndrivers)
 
 # region_hvytrk_powertrain_prop.csv
 
@@ -371,7 +369,7 @@ This file is used to specify the powertrain proportion of heavy duty trucks and 
 
 - Contact DOT
 
-https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#user-input-files-36
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#user-input-files-36)
 
 # region_prop_externalities_paid.csv 
 
