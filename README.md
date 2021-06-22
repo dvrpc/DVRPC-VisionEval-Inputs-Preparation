@@ -96,6 +96,10 @@ This file provides inputs on the proportion of households having PAYD (pay-as-yo
 
 This file contains information on regional average per capita household and group quarters income in year 2010 dollars and is used in the PredictIncome module.
 
+![image](https://user-images.githubusercontent.com/85887330/122844662-2292ab00-d2d0-11eb-9693-09d6429f472f.png)
+
+- Azone income per cap = total income of people in Azone/ # of Residents in A zone
+
 # azone_prop_sov_dvmt_diverted.csv 
 
 This file provides inputs for a goal for diverting a portion of SOV travel within a 20-mile tour distance and is used in the DivertSovTravel module.
@@ -141,18 +145,30 @@ This file contains the information about level of car service availability and i
 # bzone_dwelling_units.csv
 
 This file contains the number single-family, multi-family and group-quarter dwelling units and is used in the PredictHousing module.
-- Can be found using Census Microdata
+
+- Can be found using Census Microdata 
+
+![image](https://user-images.githubusercontent.com/85887330/122844004-b6637780-d2ce-11eb-91aa-9aa78a15695c.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#predicthousing
 
 # bzone_employment.csv 
 
 This file contains the total, retail and service employment by zone and is used in the LocateEmployment module.
 
-https://data.census.gov/cedsci/table?q=employment%20philadelphia&tid=ACSDP1Y2019.DP03&hidePreview=true 
+![image](https://user-images.githubusercontent.com/85887330/122843962-9e8bf380-d2ce-11eb-9e6c-623445c6971b.png)
+
+- https://data.census.gov/cedsci/table?q=employment%20philadelphia&tid=ACSDP1Y2019.DP03&hidePreview=true 
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#locateemployment
 
 # bzone_hh_inc_qrtl_prop.csv 
 
-
 This file contains the proportion of households in 1st, 2nd, 3rd, and 4th quartile of household income and is used in the PredictHousing module.
+
+![image](https://user-images.githubusercontent.com/85887330/122843708-1d346100-d2ce-11eb-939b-051ba1a01c86.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#predicthousing 
 
 - Average Incomes Table: https://data.census.gov/mdat/#/search?ds=ACSPUMS5Y2019&vv=*FINCP&wt=WGTP 
 
@@ -160,7 +176,11 @@ This file contains the proportion of households in 1st, 2nd, 3rd, and 4th quarti
 
 This file contains the latitude and longitude of the centroid of the zone and is used in the LocateEmployment module.
 
-- Would we create this file manually?
+- Find Centroid of DVRPC area ( , )
+
+![image](https://user-images.githubusercontent.com/85887330/122843893-78665380-d2ce-11eb-930f-5127e908f2e2.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#locateemployment
 
 # bzone_network_design.csv 
 
