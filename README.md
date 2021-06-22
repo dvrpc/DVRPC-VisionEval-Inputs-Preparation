@@ -62,6 +62,9 @@ This file provides inputs for mean auto age and mean light truck age and is used
 
 This file provides inputs for flat fees/taxes (i.e. annual cost per vehicle) and ad valorem taxes (i.e. percentage of vehicle value paid in taxes). The file is used in CalculateVehicleOwnCost module.
 
+- Contact DOT
+
+![image](https://user-images.githubusercontent.com/85887330/122964279-13097580-d355-11eb-9c5b-d20f94d2117c.png)
 
 https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost
 
@@ -69,7 +72,7 @@ https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modul
 
 This file contains the household specific targets and is used in CreateHouseholds module.
 
-- Contact Person/Office who would have a good understadning of population forecasts by age group
+- Contact Person/Office who would have a good understanding of population forecasts by age group
 - Age-based population forecasts are also included in UrbanSim outputs
 
 ![image](https://user-images.githubusercontent.com/85887330/122816533-de3de580-d2a4-11eb-89bf-79edc22f1776.png)
@@ -89,6 +92,10 @@ https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modul
 # azone_payd_insurance_prop.csv 
 
 This file provides inputs on the proportion of households having PAYD (pay-as-you-drive) insurance and is used in the CalculateVehicleOwnCost module.
+
+![image](https://user-images.githubusercontent.com/85887330/122964420-40562380-d355-11eb-99f1-3d4d42ab2462.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleowncost
 
 * Not sure where to locate 
 
@@ -129,12 +136,19 @@ https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modul
 
 This file supplies data for vehicle access and egress time and is used in the CalculateVehicleOperatingCost module.
 
-- Access refers to ?
 - Egress: time is takes to exit vehicle
+
+![image](https://user-images.githubusercontent.com/85887330/122964808-a2168d80-d355-11eb-883a-b56012a04608.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatevehicleoperatingcost
 
 # bzone_transit_service.csv 
 
 This file supplies the data on relative public transit accessibility and is used in the AssignTransitService module.
+
+![image](https://user-images.githubusercontent.com/85887330/122964964-cb371e00-d355-11eb-8fde-7e55234fa601.png)
+
+D4c: Aggregate frequency of transit service within 0.25 miles of block group boundary per hour during evening peak period (Ref: EPA 2010 Smart Location Database)
 
 # bzone_carsvc_availability.csv 
 
@@ -184,6 +198,10 @@ https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modul
 
 This file contains the intersection density in terms of pedestrian-oriented intersections having four or more legs per square mile and is used in the Calculate4DMeasures module.
 
+![image](https://user-images.githubusercontent.com/85887330/122965342-15200400-d356-11eb-82a5-19fd50ab11e1.png)
+
+This file contains the intersection density measured by the number of pedestrian-oriented intersections having four or more legs per square mile (Ref: EPA 2010 Smart Location Database).
+
 # bzone_parking.csv 
 
 This file contains the parking information and is used in the AssignParkingRestrictions module.
@@ -226,6 +244,10 @@ https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modul
 
 # marea_base_year_dvmt.csv 
 
+![image](https://user-images.githubusercontent.com/85887330/122965840-a55e4900-d356-11eb-89b3-1208ce3828cd.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#initialize-vetravelperformance
+
 - Use Units in Structure table to identify dwelling type proportions for Philadelphia County, PA in ACS
 https://data.census.gov/cedsci/table?q=Philadelphia%20dwelling%20units&tid=ACSSE2019.K202504 
 
@@ -236,6 +258,10 @@ This file is used to specify to adjust the dvmt growth factors and is optional (
 This file is used to specify the charges of vehicle travel for different congestion levels and is optional. The file is used in the Initialize (VETravelPerformance) and CalculateRoadPerformance modules.
 
 - Contact Energy & CC office
+
+![image](https://user-images.githubusercontent.com/85887330/122965957-c4f57180-d356-11eb-86b3-1f689532accb.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#initialize-vetravelperformance
 
 # marea_dvmt_split_by_road_class.csv 
 
@@ -249,15 +275,27 @@ https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modul
 
 This file contains inputs on the numbers of freeway lane-miles and arterial lane-miles and is used in the AssignRoadMiles module.
 
+- Contact DOT
+
+![image](https://user-images.githubusercontent.com/85887330/122962453-6f6b9580-d353-11eb-881c-4b243d0f214f.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#assignroadmiles
+
 # marea_operations_deployment.csv 
 
 This file is used to specify the proportion of dvmt affected by operations for different road classes and is optional. 
 
 The file is used in the Initialize (VETravelPerformance) and CalculateRoadPerformance modules.
 
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculateroadperformance
+
 # marea_speed_smooth_ecodrive.csv 
 
 This input file supplies information of deployment of speed smoothing and ecodriving by road class and vehicle type and is used in the CalculateMpgMpkwhAdjustments module.
+
+![image](https://user-images.githubusercontent.com/85887330/122966156-fbcb8780-d356-11eb-89f7-bbfda2c642b8.png)
+
+https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#calculatempgmpkwhadjustments
 
 # marea_transit_ave_fuel_carbon_intensity.csv 
 
