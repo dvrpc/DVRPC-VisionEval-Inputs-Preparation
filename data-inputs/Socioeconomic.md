@@ -65,7 +65,7 @@ This file contains the total, retail and service employment by zone and is used 
 
 - https://data.census.gov/cedsci/table?q=employment%20philadelphia&tid=ACSDP1Y2019.DP03&hidePreview=true 
 
-[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#locateemployment
+[See Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#locateemployment)
 
 
 # bzone_hh_inc_qrtl_prop.csv 
