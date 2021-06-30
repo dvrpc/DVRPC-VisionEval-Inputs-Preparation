@@ -2,6 +2,9 @@
 
 This file has data on proportion of different household types who has EV charging available and is used in the AssignHHVehiclePowertrain module.
 
+[Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#user-input-files-27)
+
+
 # region_carsvc_powertrain_prop.csv
 
 This file is used to specify the powertrain proportion of car services and is optional. The file is used in the Initialize (VETravelPerformance), AssignHhVehiclePowertrain and AdjustHhVehicleMpgMpkwh modules.
@@ -30,9 +33,6 @@ This file is used to specify the transit fuel proportions and is optional. The f
 
 This file is used to specify the mixes of transit vehicle powertrains and is optional. The file is used in the Initialize (VETravelPerformance) and CalculatePtranEnergyAndEmissions modules.
 
-# region_ave_fuel_carbon_intensity.csv
-
-This file is used to specify the average carbon density for different vehicle types and is optional (only needed if user wants to modify the values). The file is used in the Initialize (VETravelPerformance) and CalculateCarbonIntensity modules.
 
 # region_comsvc_powertrain_prop.csv
 
@@ -42,6 +42,11 @@ This file is used to specify the powertrain proportion of commercial vehicles an
 
 This file is used to specify the powertrain proportion of heavy duty trucks and is optional. The file is used in the Initialize (VEPowertrainsAndFuels) and CalculateComEnergyAndEmissions modules.
 
-Also see:
 
-[Carbon Intensity Module] (https://github.com/visioneval/VisionEval/blob/master/sources/modules/VELandUse/inst/module_docs/AssignDemandManagement.md#bzone_travel_demand_mgtcsv)
+# Carbon Intensity Module
+
+[Module Notes](https://github.com/visioneval/VisionEval/blob/master/sources/modules/VELandUse/inst/module_docs/AssignDemandManagement.md#bzone_travel_demand_mgtcsv)
+
+## region_ave_fuel_carbon_intensity.csv
+
+This file is used to specify the average carbon density for different vehicle types and is optional (only needed if user wants to modify the values). The file is used in the Initialize (VETravelPerformance) and CalculateCarbonIntensity modules.
