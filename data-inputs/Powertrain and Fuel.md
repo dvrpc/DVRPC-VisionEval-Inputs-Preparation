@@ -41,3 +41,7 @@ This file is used to specify the powertrain proportion of commercial vehicles an
 # region_hvytrk_powertrain_prop.csv
 
 This file is used to specify the powertrain proportion of heavy duty trucks and is optional. The file is used in the Initialize (VEPowertrainsAndFuels) and CalculateComEnergyAndEmissions modules.
+
+Also see:
+
+[Carbon Intensity Module] (https://github.com/visioneval/VisionEval/blob/master/sources/modules/VELandUse/inst/module_docs/AssignDemandManagement.md#bzone_travel_demand_mgtcsv)
