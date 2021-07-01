@@ -1,3 +1,8 @@
-# azone_prop_sov_dvmt_diverted.csvu
+# DivertSovTravel module
+
+[Module + Input Documentation](https://github.com/VisionEval/VisionEval-Docs/blob/master/tutorials/verspm/Modules_and_Outputs.md/#divertsovtravel)
+
+
+## azone_prop_sov_dvmt_diverted.csvu
 
 This file provides inputs for a goal for diverting a portion of SOV travel within a 20-mile tour distance and is used in the DivertSovTravel module.
