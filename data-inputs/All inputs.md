@@ -53,7 +53,11 @@ This file supplies the data on relative public transit accessibility and is used
 # bzone_carsvc_availability.csv 
 
 This file contains the information about level of car service availability and is used in the AssignCarSvcAvailability module.
-bzone_dwelling_units.csv This file contains the number single-family, multi-family and group-quarter dwelling units and is used in the PredictHousing module.
+
+# bzone_dwelling_units.csv 
+
+This file contains the number 
+single-family, multi-family and group-quarter dwelling units and is used in the PredictHousing module.
 
 # bzone_employment.csv
 
@@ -66,7 +70,10 @@ This file contains the proportion of households in 1st, 2nd, 3rd, and 4th quarti
 # bzone_lat_lon.csv 
 
 This file contains the latitude and longitude of the centroid of the zone and is used in the LocateEmployment module.
-bzone_network_design.csv This file contains the intersection density in terms of pedestrian-oriented intersections having four or more legs per square mile and is used in the Calculate4DMeasures module.
+
+# bzone_network_design.csv 
+
+This file contains the intersection density in terms of pedestrian-oriented intersections having four or more legs per square mile and is used in the Calculate4DMeasures module.
 
 # bzone_parking.csv 
 
