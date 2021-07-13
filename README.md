@@ -10,3 +10,17 @@ This repository sets out to store and document DVRPC's efforts to create input t
 - [5. Household Travel](Generating%20Input%20Tables/5.%20Household%20Travel.md)
 - [6. Powertrain and Fuel](Generating%20Input%20Tables/6.%20Powertrain%20and%20Fuel.md)
 - [7. Travel Performance](Generating%20Input%20Tables/7.%20Travel%20Performance.md)
+
+
+## Development Environment
+
+### Python
+
+Use `conda` and the included `environment.yml` file to build a Python environment with all necessary dependencies:
+
+```bash
+conda env create -f environment.yml
+```
+
+After the creation finishes, point your IDE of choice towards this environment.
+
