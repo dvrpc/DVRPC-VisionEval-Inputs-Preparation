@@ -1,0 +1,19 @@
+name: ETL_for_VisionEval
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9*
+  - flake8
+  - pyproj
+  - geopandas
+  - psycopg2
+  - geoalchemy2
+  - ipython
+  - xlrd
+  - xlsxwriter
+  - jupyterlab
+  - python-dotenv
+  - black
+  - pip
+  - pip:
+      - --editable .
