@@ -166,21 +166,21 @@ class Database:
         # Replace the 'geom' column with 'geometry'
         if "geom" in gdf.columns:
             gdf["geometry"] = gdf["geom"]
-            gdf.drop("geom", 1, inplace=True)
+            gdf.drop("geom", axis=1, inplace=True)
 
         # Drop the 'gid' column
         if "gid" in gdf.columns:
-            gdf.drop("gid", 1, inplace=True)
+            gdf.drop("gid", axis=1, inplace=True)
 
         # Rename 'uid' to 'old_uid' if it exists in the geodataframe
         if "uid" in gdf.columns:
             gdf[f"old_uid"] = gdf["uid"]
-            gdf.drop("uid", 1, inplace=True)
+            gdf.drop("uid", axis=1, inplace=True)
 
         # Build a 'geom' column using geoalchemy2
         # and drop the source 'geometry' column
         gdf["geom"] = gdf["geometry"].apply(lambda x: WKTElement(x.wkt, srid=epsg_code))
-        gdf.drop("geometry", 1, inplace=True)
+        gdf.drop("geometry", axis=1, inplace=True)
 
         # Ensure that the target schema exists
 
@@ -191,6 +191,7 @@ class Database:
             engine,
             schema=schema,
             dtype={"geom": Geometry(geom_type_to_use, srid=epsg_code)},
+            if_exists="replace",
         )
         engine.dispose()
 
