@@ -22,8 +22,13 @@ def import_data_from_DVRPC_portal(db: Database, download_list: list):
 
     """
 
+    print("-" * 80)
+    print("Importing data from DVRPC's ArcGIS Portal")
+    print("-" * 80)
+
     for schema, table_list in download_list:
         for tbl in table_list:
+            print(f"\t-> Importing {schema}.{tbl}")
             url = f"https://arcgis.dvrpc.org/portal/services/{schema}/{tbl}/MapServer/WFSServer?request=GetFeature&service=WFS&typename={tbl}&outputformat=GEOJSON&format_options=filename:{tbl.lower()}.geojson"
 
             gdf = gpd.read_file(url)

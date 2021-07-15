@@ -13,6 +13,10 @@ DVRPC_DATA_TO_COPY = [
 
 if __name__ == "__main__":
 
+    print("-" * 80)
+    print("Standing up the analysis database")
+    print("-" * 80)
+
     db = Database()
 
     # Create the database if it doesn't exist yet
