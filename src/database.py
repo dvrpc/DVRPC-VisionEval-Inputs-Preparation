@@ -21,6 +21,7 @@ class Database:
     def __init__(self, uri: str = DATABASE_URL, super_uri: str = SUPERUSER_DATABASE_URL):
         self.uri = uri
         self.super_uri = super_uri
+        self.db_name = uri.split(r"/")[-1]
 
     def execute(self, query: str, autocommit: bool = False) -> None:
         """
@@ -51,11 +52,55 @@ class Database:
 
         return None
 
+    def query(self, query: str, super_uri: bool = False) -> list[tuple]:
+        """
+        - Use `psycopg2` to run a query and return the result as a list of tuples
+        - This will NOT commit any changes to the database
+
+        Arguments:
+            query (str): any valid sql query
+            super_uri (bool): flag to run against superuser/superdatabase
+
+        Returns:
+            list: with each item being a tuple of a result row
+        """
+
+        if super_uri:
+            uri = self.super_uri
+        else:
+            uri = self.uri
+
+        connection = psycopg2.connect(uri)
+        cursor = connection.cursor()
+
+        cursor.execute(query)
+
+        result = cursor.fetchall()
+
+        cursor.close()
+        connection.close()
+
+        return result
+
+    def exists(self) -> bool:
+        """
+        - This function gives a true or false response if the database exists
+        """
+        query = f"""
+            SELECT EXISTS(
+                SELECT datname FROM pg_catalog.pg_database
+                WHERE lower(datname) = lower('{self.db_name}')
+            );
+        """
+
+        return self.query(query, super_uri=True)[0][0]
+
     def sanitize_df_for_sql(
         self, df: pd.DataFrame | gpd.GeoDataFrame
     ) -> pd.DataFrame | gpd.GeoDataFrame:
         """
         Clean up a dataframe column names so it imports into SQL properly.
+
         This includes:
             - spaces in column names replaced with underscore
             - all column names are 100% lowercase
