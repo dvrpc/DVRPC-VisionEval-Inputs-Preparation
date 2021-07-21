@@ -7,7 +7,7 @@ This repository sets out to store and document DVRPC's efforts to create input t
 - [1. Household](Generating%20Input%20Tables/1.%20Household/1.%20Household.md)
 - [2. Land Use](Generating%20Input%20Tables/2.%20Land%20Use/2.%20Land%20Use.md)
 - [3. Transport Supply](Generating%20Input%20Tables/3.%20Transport%20Supply/3.%20Transport%20Supply.md)
-- [4. Household Vehicle](Generating%20Input%20Tables/4.%20Household%20Vehicle/4.%20Household%20Vehicle.md)
+- [4. Household Vehicle](Generating%20Input%20Tables/4.%20Household%20Vehicles/4.%20Household%20Vehicle.md)
 - [5. Household Travel](Generating%20Input%20Tables/5.%20Household%20Travel/5.%20Household%20Travel.md)
 - [6. Powertrain and Fuel](Generating%20Input%20Tables/6.%20Powertrain%20and%20Fuel/6.%20Powertrain%20and%20Fuel.md)
 - [7. Travel Performance](Generating%20Input%20Tables/7.%20Travel%20Performance/7.%20Travel%20Performance.md)
