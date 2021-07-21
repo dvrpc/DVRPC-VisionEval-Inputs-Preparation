@@ -3,7 +3,7 @@ This repository sets out to store and document DVRPC's efforts to create input t
 
 ## Grouping of Input Files by VisionEval General Module Categories
 
-- [0. Model Definition Files](Generating%20Input%20Tables/0.%20Model%20Definition%20Files/0.%20Model%20Definition%20Files.md)
+- [0. Model Definition Files](Generating%20Input%20Tables/0.%20Model%20Definitition%20Files/0.%20Model%20Definition%20Files.md)
 - [1. Household](Generating%20Input%20Tables/1.%20Household/1.%20Household.md)
 - [2. Land Use](Generating%20Input%20Tables/2.%20Land%20Use/2.%20Land%20Use.md)
 - [3. Transport Supply](Generating%20Input%20Tables/3.%20Transport%20Supply/3.%20Transport%20Supply.md)
