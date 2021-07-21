@@ -1,10 +1,10 @@
 # Geographies Used for DVRPC VisionEval Implementation
 VisionEval uses several levels of geography which are generally described in the following way:
 
-- A `region` defines the entire area covered by the VisionEval analyses
-- `Azones` are large areas such as cities, counties, or Census Public Use Microdata Areas (PUMAs)
-- `Bzones` are subdivisions of Azones that represent neighborhoods, Census tracts or block groups, or other relatively homogenous areas
-- Metropolitan areas (`Marea`) are defined as groups of Azones that define them
+>- A `region` defines the entire area covered by the VisionEval analyses
+>- `Azones` are large areas such as cities, counties, or Census Public Use Microdata Areas (PUMAs)
+>- `Bzones` are subdivisions of Azones that represent neighborhoods, Census tracts or block groups, or other relatively homogenous areas
+>- Metropolitan areas (`Marea`) are defined as groups of Azones that define them
 
 But there is flexibility in choosing what geography level is used for every geography except for `region`. The decision making on this will requires decision making on 
 1. level of effort we want to pursue--especially in initial iterations of the model
@@ -19,6 +19,8 @@ But there is flexibility in choosing what geography level is used for every geog
 
 `PUMAs` would allow subcounty reporting, though it may not be a subcounty geography folks are well acquainted with. Data quality should still be fairly good quality. Data availability may be more challenging.
 
+### **Decision: Azone = PUMA** (for now)
+
 ## Bzones
 `Bzones` have often been presented as block groups, but tracts are possible, and some agencies are using their travel model travel analysis zones (TAZs). The `Bzone` choice is perhaps most important.
 
@@ -28,5 +30,8 @@ At DVRPC, TAZs would nest better with higher geographies that we may want to rep
 
 Block groups may be a good geography. They won't nest with muncipal/district boundaries but might be close enought to most and may be more familiar to those outside the agency. It remains to be seen how available all the data is by this geo, but others have done it. If `Azones` are counties, there's not issue with this nesting to that. If they are `PUMAs`, nesting needs to be investigated, but likely will work.
 
+### **Decision: Bzone = block group** (for now. easier for SLD data)
+
 ## Marea
 `Marea` could be region for simplicity sake. Alternatives would include Urbanized Area and state-based subregions. Since `Marea` is used for transit inputs such as the fule used by various fleets, it may make sense to report these by the transit provider geographies (PA Counties for SEPTA and NJ Counties for NJ Transit and PATCO). This would be easier than trying to estimate a regional average and more accurate, that is if the fleets differ substantially.
+### **Decision: Marea = state subregion** (for now)
