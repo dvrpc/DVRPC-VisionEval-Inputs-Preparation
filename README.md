@@ -1,5 +1,5 @@
 # DVRPC Vision Eval Implementation
-This repository sets out to store and document DVRPC's efforts to create input tables for and customize the VisionEval (specifically VERSPM) Model for use in the Greater Philadelphia Region.
+This repository sets out to store and document DVRPC's efforts to create input tables for and customize the VisionEval (specifically VERSPM) Model for scenario planning in the Greater Philadelphia Region.
 
 ## Grouping of Input Files by VisionEval General Module Categories
 
