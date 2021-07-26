@@ -34,4 +34,6 @@ Block groups may be a good geography. They won't nest with muncipal/district bou
 
 ## Marea
 `Marea` could be region for simplicity sake. Alternatives would include Urbanized Area and state-based subregions. Since `Marea` is used for transit inputs such as the fule used by various fleets, it may make sense to report these by the transit provider geographies (PA Counties for SEPTA and NJ Counties for NJ Transit and PATCO). This would be easier than trying to estimate a regional average and more accurate, that is if the fleets differ substantially.
+
+Note we may want to line up Marea if that offers any compatibility with Impacts 2050
 ### **Decision: Marea = state subregion** (for now)
