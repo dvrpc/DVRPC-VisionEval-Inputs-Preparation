@@ -21,3 +21,6 @@ https://arcgis.dvrpc.org/portal/rest/services/Boundaries/CountyBoundaries/Featur
 
 ## ESRI documentation
 For more details about the capabilities and spec of using ESRI rest api check out https://developers.arcgis.com/rest/services-reference/enterprise/get-started-with-the-services-directory.htm
+
+# mapservice_to_geojson.py
+Use this hacked together script to query ESRI map services that include maxrecord limitations to output to a single geojson file.  The default record return ESRI sets when publishing map services is 1000 records, because of this it's a pain to recover all records of a large service at once.  This script batches the requests to the URL based on the max record count and merges the results.  Comments in the script explain variables to set.
