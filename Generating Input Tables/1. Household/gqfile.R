@@ -10,7 +10,7 @@ library(readr)
 df_gq <- read_csv("GQ2019_byBlockTypeSexAge.csv")
 glimpse(df_gq)
 
-#trying to get total number of people 0 to 14 for each azone
+#total number of people 0 to 14 for each azone
 gq_age0_14 <- df_gq %>% 
   group_by(azone) %>%
   filter(age_min <= "10", age_max<="14") %>%
