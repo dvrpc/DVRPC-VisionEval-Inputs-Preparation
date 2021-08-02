@@ -8,7 +8,7 @@ from src.get_data_from_DVRPC_portal import import_data_from_DVRPC_portal
 
 DVRPC_DATA_TO_COPY = [
     ("Boundaries", ["MunicipalBoundaries"]),
-    ("Demographics", ["IPD_2018"]),
+    ("Demographics", ["IPD_2018", "LimitedEngProficiencyPUMA_2017"]),
 ]
 
 if __name__ == "__main__":
