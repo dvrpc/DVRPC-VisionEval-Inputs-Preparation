@@ -8,3 +8,8 @@ type(data)
 
 db = Database()
 #db.import...
+for tablename in data.keys():
+    df = data.get(tablename)
+    # generate tablename that doesnt have slashes or start with Num
+    
+    # db.import...()
