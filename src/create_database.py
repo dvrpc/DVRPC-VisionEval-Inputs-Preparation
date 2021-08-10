@@ -8,7 +8,8 @@ from src.get_data_from_DVRPC_portal import import_data_from_DVRPC_portal
 
 DVRPC_DATA_TO_COPY = [
     ("Boundaries", ["MunicipalBoundaries"]),
-    ("Demographics", ["IPD_2018", "LimitedEngProficiencyPUMA_2017"]),
+    ("Demographics", ["IPD_2018", "LimitedEngProficiencyPUMA_2017", "LimitedEnglishProficiency_2017"])
+    
 ]
 
 if __name__ == "__main__":
@@ -28,5 +29,20 @@ if __name__ == "__main__":
 
     # Import data from DVRPC's ArcGIS Portal
     import_data_from_DVRPC_portal(db, download_list=DVRPC_DATA_TO_COPY)
-
+    
+    #Generate a lookup table that matches BlockGrp IDs to PUMA IDs
+    
+    db.execute(
+        """
+        create table if not exists bzone_to_azone as (
+            select 
+                b.geoid10 as bzone_id,
+                p.geoid10 as azone_id
+            from raw.limitedenglishproficiency_2017 b , raw.limitedengproficiencypuma_2017 p 
+            where st_contains(p.geom, st_centroid(b.geom))
+            order by azone_id desc
+            )
+        
+        """
+    )
     print("Done")
