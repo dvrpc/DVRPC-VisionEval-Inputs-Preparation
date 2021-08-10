@@ -124,6 +124,33 @@ class Database:
 
         return df
 
+    def import_dataframe(
+        self, df: pd.DataFrame, tablename: str, df_import_kwargs: dict = {}
+    ) -> None:
+        """
+        - Import an in-memory dataframe to postgres
+        - `df_import_kwargs` can include anything accepted by `df.to_sql()` ...
+            ... for example: df_import_kwargs={'if_exists': 'replace'}
+        """
+
+        # Clean up column names
+        df = self.sanitize_df_for_sql(df)
+
+        # Make sure the schema exists
+        if "." in tablename:
+            schema, tbl = tablename.split(".")
+            self.execute(f"CREATE SCHEMA IF NOT EXISTS {schema};")
+        else:
+            schema = "public"
+            tbl = tablename
+
+        # Write to database
+        engine = sqlalchemy.create_engine(self.uri)
+
+        df.to_sql(tbl, engine, schema=schema, **df_import_kwargs)
+
+        engine.dispose()
+
     def import_geodataframe(
         self, gdf: gpd.GeoDataFrame, new_tablename: str, schema: str = "raw"
     ) -> None:

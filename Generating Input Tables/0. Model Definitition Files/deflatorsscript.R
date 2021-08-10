@@ -53,3 +53,5 @@ if (update_year==2019) {
 #OTHERWISE, DON'T DO ANYTHING
 
 write.csv(bls_conversions, file = "deflators.csv")
+
+#This file is a CSV Adaptation of Ian's Script
