@@ -1,12 +1,11 @@
 from __future__ import annotations
-import os
 import pandas as pd
 import geopandas as gpd
 import sqlalchemy
 import psycopg2
 from geoalchemy2 import Geometry, WKTElement
 
-from src.environment_variables import DATABASE_URL, SUPERUSER_DATABASE_URL
+from src.helpers.environment_variables import DATABASE_URL, SUPERUSER_DATABASE_URL
 
 
 class Database:
@@ -151,9 +150,7 @@ class Database:
 
         engine.dispose()
 
-    def import_geodataframe(
-        self, gdf: gpd.GeoDataFrame, new_tablename: str, schema: str = "raw"
-    ) -> None:
+    def import_geodataframe(self, gdf: gpd.GeoDataFrame, new_tablename: str, schema: str) -> None:
         """
         - Import an in-memory geodataframe into PostGIS, using the specified table and schema names
         - The schema gets created if it does not already exist
@@ -236,3 +233,16 @@ class Database:
 
         for query in queries:
             self.execute(query)
+
+    def get_dataframe_from_query(self, query: str) -> pd.DataFrame:
+        """
+        - Return a `pandas.Dataframe` from a SQL query
+        """
+
+        engine = sqlalchemy.create_engine(self.uri)
+
+        df = pd.read_sql(query, engine)
+
+        engine.dispose()
+
+        return df
