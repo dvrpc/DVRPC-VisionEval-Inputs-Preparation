@@ -3,10 +3,10 @@ from shapely.geometry import shape
 import pandas as pd
 import geopandas as gpd
 
-from src.database import Database
+from src.helpers.database import Database
 
 
-def import_data_from_DVRPC_portal(db: Database, download_list: list):
+def import_data_from_DVRPC_portal(download_list: list):
     """
     - Download starter data via public ArcGIS API using wget
 
@@ -22,6 +22,8 @@ def import_data_from_DVRPC_portal(db: Database, download_list: list):
 
     """
 
+    db = Database()
+
     print("-" * 80)
     print("Importing data from DVRPC's ArcGIS Portal")
     print("-" * 80)
@@ -33,4 +35,4 @@ def import_data_from_DVRPC_portal(db: Database, download_list: list):
 
             gdf = gpd.read_file(url)
 
-            db.import_geodataframe(gdf, new_tablename=tbl.lower())
+            db.import_geodataframe(gdf, new_tablename=tbl.lower(), schema="extract")
