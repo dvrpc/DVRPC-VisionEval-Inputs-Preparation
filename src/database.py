@@ -125,7 +125,7 @@ class Database:
         return df
 
     def import_dataframe(
-        self, df: pd.DataFrame, tablename: str, df_import_kwargs: dict = {}
+        self, df:pd.DataFrame, tablename:str, df_import_kwargs: dict = {}
     ) -> None:
         """
         - Import an in-memory dataframe to postgres
@@ -141,7 +141,7 @@ class Database:
             schema, tbl = tablename.split(".")
             self.execute(f"CREATE SCHEMA IF NOT EXISTS {schema};")
         else:
-            schema = "public"
+            schema = "raw"
             tbl = tablename
 
         # Write to database
