@@ -1,15 +1,14 @@
-#Note: this script only allows you to upload the first csv in the folder, this needs to be fixed- Fiza 
 
-
+from src.helpers.database import Database
 import psycopg2
 import pandas as pd
 from sqlalchemy import create_engine
 import os
 
-
+db = Database
 ####################################
 # change for your setup
-DB_NAME = "postgres"
+DB_NAME = "visioneval_data"
 #database connection info
 db_connection_info = {
     "database": DB_NAME,
@@ -21,13 +20,16 @@ db_connection_info = {
 connection = psycopg2.connect(**db_connection_info)
 cur = connection.cursor() 
 #another format for connection info
-conn_string = 'postgresql://postgres:root@localhost/postgres'
+conn_string = 'postgresql://postgres:root@localhost/visioneval_data'
 #where your excel files are located
-filepath = "C:/Users/fakram/Desktop/GQPop2019Data/"
+
+#Note: this script only allows you to upload the first csv in the folder, this needs to be fixed- Fiza 
+
+filepath = "C:/Users/fakram/Desktop/CSVs/"
 ######################################
 
 #get list of existing tables in DB
-def GetTableList(public):
+def GetTableList(extract):
     q_gettables = """
     SELECT
         table_name
@@ -35,7 +37,7 @@ def GetTableList(public):
     WHERE(
         table_schema = '%s'
         )
-    ORDER BY table_name""" % public
+    ORDER BY table_name""" % extract
     #run query
     cur.execute(q_gettables)
     table_list = cur.fetchall()
@@ -44,8 +46,8 @@ def GetTableList(public):
 
 #reformat that list
 listtables = []
-for i in range(0, len(GetTableList('public'))):
-    listtables.append(GetTableList('public')[i][0])
+for i in range(0, len(GetTableList('extract'))):
+    listtables.append(GetTableList('extract')[i][0])
 
 #clean up column names for import
 def df_clean(df):
@@ -67,12 +69,12 @@ def loadtables(tbl_name, excel_file_name):
         df_clean(df)
         #write to db
         engine = create_engine(conn_string)
-        df.to_sql(tbl_name, engine, schema = 'public')
+        df.to_sql(tbl_name, engine, schema = 'extract')
     else:
         print("already in database")
 
 #iterate over the files to run the above functions
-db_tbl_names = ['GQ2019_byBlockTypeSexAgePGSQL']
+db_tbl_names = ['geo']
 files = os.listdir(filepath)
 for i in range(0,4):
     loadtables(db_tbl_names[i], files[i])
