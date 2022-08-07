@@ -1,0 +1,4 @@
+backup is via pgdump
+
+retrieval looks like this
+psql -U postgres visioneval < "D:\ve_postgres_backup_052522.sql"
